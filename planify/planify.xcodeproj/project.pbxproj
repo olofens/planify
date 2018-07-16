@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73C4674620FCAABC00F24D0A /* SignedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C4674520FCAABC00F24D0A /* SignedInViewController.swift */; };
 		73F6991C20F8FCD8001F8090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F6991B20F8FCD8001F8090 /* AppDelegate.swift */; };
 		73F6991E20F8FCD8001F8090 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F6991D20F8FCD8001F8090 /* ViewController.swift */; };
 		73F6992120F8FCD8001F8090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F6991F20F8FCD8001F8090 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73C4674520FCAABC00F24D0A /* SignedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInViewController.swift; sourceTree = "<group>"; };
 		73F6991820F8FCD8001F8090 /* planify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = planify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F6991B20F8FCD8001F8090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73F6991D20F8FCD8001F8090 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				73F6995A20F92867001F8090 /* SpotifyMetadata.framework */,
 				73F6991B20F8FCD8001F8090 /* AppDelegate.swift */,
 				73F6991D20F8FCD8001F8090 /* ViewController.swift */,
+				73C4674520FCAABC00F24D0A /* SignedInViewController.swift */,
 				73F6991F20F8FCD8001F8090 /* Main.storyboard */,
 				73F6992220F8FCDA001F8090 /* Assets.xcassets */,
 				73F6992420F8FCDA001F8090 /* LaunchScreen.storyboard */,
@@ -279,6 +282,7 @@
 				73F6991E20F8FCD8001F8090 /* ViewController.swift in Sources */,
 				73F6991C20F8FCD8001F8090 /* AppDelegate.swift in Sources */,
 				73F6996220F93922001F8090 /* NotificationConstant.swift in Sources */,
+				73C4674620FCAABC00F24D0A /* SignedInViewController.swift in Sources */,
 				73F6995420F92477001F8090 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

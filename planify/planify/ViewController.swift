@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var signInButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -44,13 +45,27 @@ class ViewController: UIViewController {
             //Check if there is an error because then there won't be a session.
             if let error = error {
                 print(error)
+                print("yikes")
+                print("tried with")
+                print(SPTAuth.defaultInstance().clientID)
                 return
             }
             
             // Check if there is a session
             if let session = session {
                 // If there is use it to login to the audio streaming controller where we can play music.
+                print("there is a session")
                 SPTAudioStreamingController.sharedInstance().login(withAccessToken: session.accessToken)
+                SPTAudioStreamingController.sharedInstance().playSpotifyURI("spotify:track:7cQnIhLin7koR2sO2bt2KS", startingWith: 0, startingWithPosition: 0, callback: { (error) in
+                    if (error != nil) {
+                        print("playing!")
+                    } else {
+                        print(error!.localizedDescription)
+                    }
+                })
+                
+            self.performSegue(withIdentifier: "segueLogIn", sender: self)
+                
             }
         }
     }
